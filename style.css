@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+
+body{
+    background-color: black;
+    color:seashell;
+    font-size:22px;
+    font-family:helvetica;
+    opacity: 0.9;
+    width:100vw;
+    margin:0;
+}
+
+
+/*Header Styling*/
+header{
+    height: 69px;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+    display:inline-flex;
+    position: fixed;
+    background-color:black;
+    z-index:2;
+}
+
+#logo{
+    display:inline-flex;
+    height: 50px;
+    margin: auto 10px;
+}
+
+nav{
+    width:100%;
+    display:flex;
+    padding-right: 10px;
+  
+}
+nav ul{
+    display:flex;
+    justify-content:flex-end;
+    width:100%;
+    margin: auto 0px  auto 10px;
+}
+li{
+    display:inline-block;
+    text-decoration: underline;
+    margin: auto 10px;
+}
+
+
+/*Main Sections Styling*/
+main{
+    padding-top:69px;
+    height: 100%;
+    text-align: center;
+}
+
+.center{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2, h4{
+    padding: 6px 0px;
+}
+
+/*First Section*/
+.first-img{
+    max-width:1200px;
+    height:700px;
+    position:relative;
+ }
+
+ .first-section{
+    position: relative;
+    margin-bottom:60px;
+ }
+
+.banner{
+    position: absolute;
+    top:240px;
+    left:0%;
+    width: 100%;
+    background-color: black;
+    height:90px;
+    margin-top:20px;
+    z-index:1;
+}
+
+
+@media only screen and (max-width:520px){
+    .banner{
+        height: 135px;
+        width: 100vw;
+    }
+}
+@media only screen and (min-width:521px) and (max-width:810px){
+    .banner{
+        height: 120px;
+        width: 100vw;
+    }
+}
+/*Second Section*/
+
+.second-section{
+    position:relative;  
+    margin-bottom:60px;  
+}
+
+.flex{
+    display: flex;
+    width: 1000px;
+    margin: 0px auto;
+    justify-content: space-evenly;
+    gap:10px;
+    flex-wrap: wrap;
+}
+
+.flex .card img{
+    width: 300px;
+    height: 200px;
+    flex-grow: 1;
+    margin-bottom: 10px;
+
+}
+.card{
+    margin: 0px 0px;
+    flex-grow: 1;
+    
+}
+.last{
+    margin-left: -325px; /* Adapt 20px gap to 5px */
+   
+}
+
+p{
+    margin-top:10px;
+}
+/*Footer Styling*/
+footer{
+    height:200px;
+    width:100%;
+    text-align: center;
+}
