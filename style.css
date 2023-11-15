@@ -9,12 +9,17 @@ body{
     color:seashell;
     font-size:22px;
     font-family:helvetica;
-    opacity: 0.9;
     width:100vw;
     margin:0;
 }
 
+h2,h4{
+    margin: 10px;
+}
 
+.heading h2, .heading h4{
+     margin:27px;
+}
 /*Header Styling*/
 header{
     height: 69px;
@@ -64,20 +69,19 @@ main{
     margin-right: auto;
 }
 
-h2, h4{
-    padding: 6px 0px;
-}
+
+
 
 /*First Section*/
 .first-img{
-    max-width:1200px;
+    width:1200px;
     height:700px;
     position:relative;
  }
 
  .first-section{
     position: relative;
-    margin-bottom:60px;
+    margin-bottom:20px;
  }
 
 .banner{
@@ -89,8 +93,8 @@ h2, h4{
     height:90px;
     margin-top:20px;
     z-index:1;
+    opacity: 0.9;
 }
-
 
 @media only screen and (max-width:520px){
     .banner{
@@ -115,30 +119,87 @@ h2, h4{
     display: flex;
     width: 1000px;
     margin: 0px auto;
-    justify-content: space-evenly;
-    gap:10px;
+    gap:40px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .flex .card img{
-    width: 300px;
-    height: 200px;
-    flex-grow: 1;
+    width:300px;
+    height:200px;
     margin-bottom: 10px;
-
 }
 .card{
+
     margin: 0px 0px;
-    flex-grow: 1;
-    
-}
-.last{
-    margin-left: -325px; /* Adapt 20px gap to 5px */
-   
+    flex-grow: 0;
+    flex-shrink: 0;
+
 }
 
+.card:hover {
+    transform: scale(1.1);
+}
 p{
     margin-top:10px;
+}
+
+
+/*Third Section*/
+.third-section{
+    height:500px;
+    display: flex;
+    align-items: center;
+    margin: 250px auto;
+    height: 570px;
+    width: 1200px;
+}
+
+.address{
+    padding-top:20px;
+    
+}
+.flex-address{
+    position: relative;
+    display: flex;
+    flex-flow:row wrap;
+    align-items: center;
+    width: 1000px;
+    margin: 0px auto;
+    gap:40px;
+    display: inline-flex;
+    justify-content: space-evenly;
+    gap:10px;
+}
+
+.location-card{
+    border-radius: 5px;
+    position: absolute;
+    display:inline-block;
+    width: 300px;
+    background-color: black;
+    height:200px;
+    padding:50px 0px;
+    z-index:1;
+    opacity: 1;
+    gap: 40px;
+}
+
+
+.location-card:hover {
+    transform: scale(1.1);
+}
+.location-header{
+    position: absolute;
+    padding-bottom:400px;
+    margin-bottom: 15px;
+}
+
+.margin-right{
+    margin-right:640px;
+}
+.margin-left{
+    margin-left:640px;
 }
 /*Footer Styling*/
 footer{
