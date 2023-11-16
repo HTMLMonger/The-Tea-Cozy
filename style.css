@@ -88,7 +88,7 @@ main{
     position: absolute;
     top:240px;
     left:0%;
-    width: 100vw;
+    width: 100%;
     background-color: black;
     height:90px;
     margin-top:20px;
@@ -204,6 +204,6 @@ p{
 /*Footer Styling*/
 footer{
     height:200px;
-    width:100vw;
+    width:100%;
     text-align: center;
 }
