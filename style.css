@@ -95,7 +95,7 @@ main{
     z-index:1;
     opacity: 0.9;
 }
-
+.banner h2, .banner h4margin:0 auto;
 @media only screen and (max-width:520px){
     .banner{
         height: 135px;
@@ -112,7 +112,8 @@ main{
 
 .second-section{
     position:relative;  
-    margin-bottom:60px;  
+    margin:0 auto 60px auto;
+
 }
 
 .flex{
@@ -207,4 +208,7 @@ footer{
     width:100%;
     text-align: center;
     margin: auto auto;
+}
+footer h2, footer h4{
+    margin:0 auto;
 }
